@@ -1,0 +1,13 @@
+# get_page_title.yaml
+
+default_model:
+  model: ollama/llama3
+  api_base: https://raphaelfrancis.com/ollama
+  auth_token: 
+
+flow:
+  reverse_string:
+    action: my_reverse_string
+    input_string:
+      var: my_input
+default_output: reverse_string.reversed_string
